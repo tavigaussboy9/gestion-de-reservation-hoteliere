@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  utilisateur:
+    build: ./service-utilisateur
+    ports:
+      - '3001:3001'
+  reservation:
+    build: ./service-reservation
+    ports:
+      - '3002:3002'
+  paiement:
+    build: ./service-paiement
+    ports:
+      - '3003:3003'
+  avis:
+    build: ./service-avis
+    ports:
+      - '3004:3004'
+  mongodb:
+    image: mongo
+    ports:
+      - '27017:27017'
