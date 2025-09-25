@@ -17,6 +17,6 @@ services:
     ports:
       - '3004:3004'
   mongodb:
-    image: mongo:5.0
+    image: mongo:latest
     ports:
       - '27017:27017'
